@@ -20,13 +20,13 @@ metadata:
     nginx.ingress.kubernetes.io/healthcheck-path: "/"
 spec:
   rules:
-  - host: nginx.65.1.233.157.nip.io
+  - host: nginx.3.109.20.135.nip.io
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: nginx-service-clusterip
+            name: nginx-service
             port:
               number: 80
